@@ -1,0 +1,75 @@
+﻿@using WebSiteBanHang.Models
+@model itemGioHang
+@{
+    ViewBag.Title = "SuaGioHang";
+    Layout = "~/Views/Layout/ProductLayout.cshtml";
+}
+@{
+    List<itemGioHang> lstGioHang = ViewBag.GioHang as List<itemGioHang>;
+}
+
+
+<div class="checkout">
+    <div class="container">
+        <h3>Chỉnh Sửa Giỏ Hàng</h3>
+        <div class="table-responsive checkout-right animated wow slideInUp" data-wow-delay=".5s">
+            <table class="timetable_sub">
+                <thead>
+                    <tr>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Hình Ảnh</th>
+                        <th>Số Lượng</th>
+                        <th>Đơn Giá</th>
+                        <th>Thành Tiền</th>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in lstGioHang)
+                    {
+                        //sản phẩm có mã sp dc chỉnh sửa
+                        if (Model.MaSP == item.MaSP)
+                        {
+                            using (Html.BeginForm("CapNhatGioHang", "GioHang"))
+                            {
+                                <tr class="rem4">
+                                    @Html.Hidden("MaSP",item.MaSP)
+                                    <td class="invert">@item.TenSP</td>
+                                    <td class="invert-image"><a href="#"><img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt=" " class="img-responsive" style="width:120px; height:150px" /></a></td>
+                                    <td class="invert">
+                                        <span>@Html.TextBox("SoLuong", item.SoLuong)</span>
+                                    </td>
+                                    <td class="invert">@item.DonGia.ToString("#,##") VNĐ</td>
+                                    <td class="invert">@item.ThanhTien.ToString("#,##") VNĐ</td>
+                                    <td class="invert"><input type="submit" value="Cập Nhật" /></td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr class="rem4">
+                                <td class="invert">@item.TenSP</td>
+                                <td class="invert-image"><a href="#"><img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt=" " class="img-responsive" style="width:120px; height:150px" /></a></td>
+                                <td class="invert">
+                                    
+                                        
+                                            @item.SoLuong
+                                            
+                                   
+                                </td>
+                                <td class="invert">@item.DonGia.ToString("#,##") VNĐ</td>
+                                <td class="invert">@item.ThanhTien.ToString("#,##") VNĐ</td>
+                                <td>@Html.ActionLink("Sửa", "SuaGioHang", new { @MaSP = item.MaSP ,@Class= "btn btn-info" })</td>
+                            </tr>
+                        }
+
+                    }
+
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</div>
+<!-- //check out -->

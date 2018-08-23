@@ -1,0 +1,108 @@
+﻿@using WebSiteBanHang.Models;
+@model  PhieuNhap
+@{
+    ViewBag.Title = "NhapHang";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+@{
+    IEnumerable<NhaCungCap> lstNCC = ViewBag.MaNCC as IEnumerable<NhaCungCap>;
+}
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 style="font-weight:800;" class="box-title">
+                    Nhập hàng từ Nhà Cung Cấp
+                </h3>
+                <div class="box-body">
+                    @using (Html.BeginForm("NhapHang", "QuanLyPhieuNhap", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                    {
+                        <div class="row">
+                            <div class="ThongtinPhieuNhap col-md-12">
+                                <div class="col-md-2">
+                                    Nhà cung cấp
+                                </div>
+                                <div class="col-md-5">
+                                    @*Chọn nhà cung cấp*@
+                                    <select class="MaNCC" name="MaNCC">
+
+                                        @foreach (var item in lstNCC)
+                                        {
+                                            <option value="@item.MaNCC">@item.TenNCC</option>
+                                        }
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div class="col-md-12">
+                            @*Ngày nhập*@
+                            <div class="col-md-2">
+                                Ngày nhập
+                            </div>
+                            <div class="col-md-5">
+                                <input name="NgayNhap" type="date" class="date" />
+                            </div>
+                        </div>
+                        <div class="clearfix">  </div>
+                        <br /><br /><br />
+                        @*Phần chi tiết nhập hàng*@
+                        <table class="table tblChiTietPhieuNhap">
+                            @{IEnumerable<SanPham> lstSanPham = ViewBag.ListSanPham as IEnumerable<SanPham>;}
+                            @*Tạo ra 1 tr với nội dung nhập hàng của 1 sản phẩm*@
+                            <tr class="trAppend" style="display:none;">
+                                <td>
+                                    <select class="ddlSanPham" name="">
+                                        @foreach (var item in lstSanPham)
+                                        {
+                                            <option value="@item.MaSP"> @item.TenSP </option>
+                                        }
+                                    </select>
+                                </td>
+                                <td>
+                                    <input name="" class="txtDonGia" value="0" />
+                                </td>
+                                <td>
+                                    <input name="" class="txtSoLuong" value="0" />
+                                </td>
+                                <td>
+                                    <button class="btnDelete btn btn-danger"><i class="fa fa-trash-o"></i></button>
+                                </td>
+                            </tr>
+                            <tr class="trFirstChild" data-id="-1">
+                                <td>Sản phẩm</td>
+                                <td>Đơn giá nhập</td>
+                                <td>Số lượng nhập</td>
+                                <td>Xóa</td>
+                            </tr>
+
+                        </table>
+                        @*Nút button thêm*@
+                        <input type="button" value="+" class="btn btn-success" id="btnAdd" />
+                        <input type="submit" value="Nhập hàng" class="btn btn-primary" id="btnNhapHang" />
+                        <input type="button" value="Sản Phẩm sắp hết hàng" class="btn btn-info" id="btnSPHetHang" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 Sphethang" style="display:none">
+        <div class="box">
+            <div class="box-header">
+                <h3 style="font-weight:800;" class="box-title">
+                    Sản Phẩm cần nhập hàng
+                </h3>
+                <div class="box-body table-responsive no-padding">
+                    @Html.Action("DSSPHetHang","QuanLyPhieuNhap")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

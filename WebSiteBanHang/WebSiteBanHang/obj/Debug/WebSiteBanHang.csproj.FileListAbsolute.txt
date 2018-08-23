@@ -1,0 +1,199 @@
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\ApplicationInsights.config
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.dll.config
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.pdb
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csc.exe
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csc.exe.config
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csc.rsp
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csi.exe
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csi.exe.config
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csi.rsp
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.AppContext.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Collections.Immutable.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Console.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Diagnostics.Process.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.Compression.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.FileSystem.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.Pipes.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Reflection.Metadata.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.AccessControl.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Claims.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Principal.Windows.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Threading.Thread.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.ValueTuple.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.XPath.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\vbc.exe
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\vbc.exe.config
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\vbc.rsp
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\VBCSCompiler.exe
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\roslyn\VBCSCompiler.exe.config
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Antlr3.Runtime.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.SqlServer.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.Agent.Intercept.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.DependencyCollector.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.Web.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.WindowsServer.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.ApplicationInsights.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.Web.Infrastructure.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Newtonsoft.Json.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Diagnostics.DiagnosticSource.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Helpers.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Mvc.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Optimization.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Razor.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Deployment.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Razor.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\WebGrease.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.SqlServer.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Helpers.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Mvc.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Optimization.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Razor.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Deployment.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Razor.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Newtonsoft.Json.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Antlr3.Runtime.pdb
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\System.Diagnostics.DiagnosticSource.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.DependencyCollector.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.WindowsServer.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.Web.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csprojAssemblyReference.cache
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csproj.CoreCompileInputs.cache
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csproj.CopyComplete
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.dll
+D:\back-end\code\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.pdb
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\ApplicationInsights.config
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.dll.config
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.pdb
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csc.exe
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csc.exe.config
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csc.rsp
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csi.exe
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csi.exe.config
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\csi.rsp
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.AppContext.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Collections.Immutable.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Console.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.Compression.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.FileSystem.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.IO.Pipes.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Reflection.Metadata.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.AccessControl.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Claims.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Security.Principal.Windows.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.ValueTuple.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.XPath.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\vbc.exe
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\vbc.exe.config
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\vbc.rsp
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\VBCSCompiler.exe
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\roslyn\VBCSCompiler.exe.config
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Antlr3.Runtime.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\CaptchaMvc.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.SqlServer.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.Agent.Intercept.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.DependencyCollector.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.Web.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.WindowsServer.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.ApplicationInsights.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.Web.Infrastructure.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Newtonsoft.Json.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\PagedList.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\PagedList.Mvc.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Diagnostics.DiagnosticSource.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Helpers.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Mvc.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Optimization.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Razor.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Deployment.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Razor.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\WebGrease.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\CaptchaMvc.pdb
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\CaptchaMvc.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.SqlServer.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.DependencyCollector.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.Web.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.WindowsServer.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Newtonsoft.Json.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\PagedList.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\PagedList.Mvc.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Diagnostics.DiagnosticSource.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Helpers.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Mvc.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Razor.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Deployment.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.WebPages.Razor.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Optimization.xml
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\bin\Antlr3.Runtime.pdb
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csproj.CoreCompileInputs.cache
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csproj.CopyComplete
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.dll
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.pdb
+D:\back-end\QuanLy Ban Hang\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csprojAssemblyReference.cache

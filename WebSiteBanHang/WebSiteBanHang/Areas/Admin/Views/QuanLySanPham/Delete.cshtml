@@ -1,0 +1,84 @@
+﻿@model WebSiteBanHang.Models.SanPham
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <!-- left column -->
+    <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h1 class="box-title">Xóa Sản Phẩm</h1>
+            </div>
+            <h3 style="padding-bottom:1rem;text-align:center">Bạn có chắc muốn xóa sản phẩm này ?</h3>
+            <div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box box-primary">
+
+                                    <div class="box-body box-profile">
+                                        <img src="@Url.Content("../../../Content/images/ImagesSanPham/"+Model.HinhAnh)" class="img-fluid" style="width:350px;height:350px" />
+                                        @using (Html.BeginForm())
+                                        {
+                                            @Html.AntiForgeryToken()
+
+                                            <div class="form-actions no-color">
+                                                <input style="padding:1rem 15rem" type="submit" value="Delete" class="btn btn-danger" />
+                                            </div>
+                                        }
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="nav-tabs-custom animated wow fadeInRight" data-wow-delay="2s">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#activity" data-toggle="tab">Thông Tin Chung</a></li>
+                                    <li><a href="#timeline" data-toggle="tab">Cấu Hình</a></li>
+                                    <li><a href="#settings" data-toggle="tab">Mô Tả</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="active tab-pane" id="activity">
+                                        <!-- Post -->
+                                        <div class="post">
+                                            <div class="user-block">
+                                                <h2>
+                                                    @Model.TenSP
+                                                    
+                                                </h2>
+                                                <h4>@Model.LoaiSanPham.TenLoai</h4>
+                                                <h4>Đơn Giá : <span>@Model.DonGia.Value.ToString("#,##") VNĐ</span></h4>
+                                                <h4>Số Lượng Tồn : <span>@Model.SoLuongTon</span></h4>
+                                                <h4>Số Lần Mua : <span>@Model.SoLanMua</span></h4>
+                                            </div>
+
+                                        </div>
+                                        <!-- /.post -->
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                    <div class="tab-pane" id="timeline">
+                                        @Html.Raw(Model.CauHinh)
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                    <div class="tab-pane" id="settings">
+                                      @Html.Raw(Model.MoTa)
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                </div>
+                                <!-- /.tab-content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <a href="@Url.Action( "Index","QuanLySanPham")" class="btn btn-dark">Quay Lại</a> 
+
+            </div>
+        </div>
+    </div>
+</div>
+

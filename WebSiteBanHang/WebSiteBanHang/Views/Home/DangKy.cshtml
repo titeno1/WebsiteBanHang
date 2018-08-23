@@ -1,0 +1,131 @@
+﻿@using CaptchaMvc.HtmlHelpers
+@using CaptchaMvc
+@model WebSiteBanHang.Models.ThanhVien
+
+<!--Đăng Ký-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body modal-body-sub_agile">
+                <div class="col-md-12">
+                    <h3 class="agileinfo_sign">Đăng Ký</h3>
+                </div>
+                @using (Ajax.BeginForm("DangKy", "Home", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="col-md-6 modal_body_left modal_body_left1">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.TextBoxFor(model => model.TaiKhoan, new { htmlAttributes = new { @class = "form-control"} })
+                            <label>Tài Khoản</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.TaiKhoan, "", new { @class = "text-danger" })</p>
+                            </div>   
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.TextBoxFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                            <label>Họ Tên</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })</p>
+                            </div>
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.PasswordFor(model => model.MatKhau)
+                            <label>Mật Khẩu</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })</p>
+                            </div>
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.PasswordFor(model => model.NhapLaiMatKhau)
+                            <label>Nhập Lại Mật Khẩu</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.NhapLaiMatKhau, "", new { @class = "text-danger" })</p>
+                            </div>
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.TextBoxFor(model => model.Email)
+                            <label>Email</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })</p>
+                            </div>
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.TextBoxFor(model => model.DiaChi)
+                            <label>Địa Chỉ</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })</p>
+                            </div>
+                        </div>
+                        <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                            <li>
+                                <a href="#" class="facebook">
+                                    <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter">
+                                    <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="instagram">
+                                    <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="pinterest">
+                                    <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="col-md-6 modal_body_right modal_body_right1">
+
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.TextBoxFor(model => model.SoDienThoai)
+                            <label>Số Điện Thoại</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })</p>
+                            </div>
+                        </div>
+                        <div class="styled-input ">
+                            @Html.DropDownList("CauHoi")
+                            <span></span>
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            @Html.TextBoxFor(model => model.CauTraLoi)
+                            <label>Câu Trả Lời</label>
+                            <div>
+                                <p> @Html.ValidationMessageFor(model => model.CauTraLoi, "", new { @class = "text-danger" })</p>
+                            </div>
+                        </div>
+                        <div class="styled-input">
+                            @Html.MathCaptcha()
+                            <span style="color:red" id="ThongBao"></span>
+                        </div>
+                    </div>
+                    <input type="submit" value="Đăng Ký">
+
+
+                    <p><a href="#">By clicking register, I agree to your terms</a></p>
+
+
+                }
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //Modal content-->
+    </div>
+</div>
+

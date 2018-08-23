@@ -1,0 +1,44 @@
+﻿@model WebSiteBanHang.Models.Quyen
+
+@{
+    ViewBag.Title = "Xóa Quyền";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <h3 style="padding-left:1rem" class="box-title">
+                Xóa Quyền
+            </h3>
+            <div class="box-header">
+                <h3 class="box-title">
+                    Bạn có Chắc muốn xóa quyền này ?
+                </h3>
+                <div class="box-body">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.TenQuyen)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.TenQuyen)
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="box-footer clearfix">
+                    @using (Html.BeginForm("Delete", "Quyen", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Delete" class="btn btn-danger" /> |
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

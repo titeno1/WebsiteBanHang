@@ -1,0 +1,162 @@
+﻿
+@using WebSiteBanHang.Models
+@model List<itemGioHang>
+@{
+    ViewBag.Title = "XemGioHang";
+    Layout =null;
+}
+
+<div id="partialGioHang">
+    @if (Model == null || Model.Count == 0)
+    {
+        <h1>Giỏ Hàng rỗng !</h1>
+    }
+    else
+    {
+        <!-- check out -->
+        <div class="checkout">
+            <div class="container">
+                <h3>Giỏ Hàng</h3>
+                <div class="table-responsive checkout-right animated wow slideInUp" data-wow-delay=".5s">
+                    <table class="timetable_sub">
+                        <thead>
+                            <tr>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Hình Ảnh</th>
+                                <th>Số Lượng</th>
+                                <th>Đơn Giá</th>
+                                <th>Thành Tiền</th>
+                                <th>Sửa</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr class="rem4">
+                                    <td class="invert">@item.TenSP</td>
+                                    <td class="invert-image"><a href="#"><img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt=" " class="img-responsive" style="width:120px; height:150px" /></a></td>
+                                    <td class="invert">@item.SoLuong </td>
+                                    <td class="invert">@item.DonGia.ToString("#,##") VNĐ</td>
+                                    <td class="invert">@item.ThanhTien.ToString("#,##") VNĐ</td>
+                                    <td><a href="@Url.Action("SuaGioHang","GioHang",new{@MaSP = item.MaSP  })"><i class="fa fa-edit"></i></a></td>
+                                    <td>@Ajax.ActionLink("Xóa", "XoaGioHang", "GioHang", new { @MaSP = item.MaSP }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "patialGioHang", InsertionMode = InsertionMode.Replace }, null)</td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+
+                    </table>
+                </div>
+                <div class="checkout-left">
+                    <div class="checkout-right-basket animated wow slideInLeft" data-wow-delay=".5s">
+                        <h4>Tổng Tiền</h4>
+                        <ul>
+                            @foreach (var item in Model)
+                            {
+                                <li>@item.TenSP <i>-</i> <span>@item.ThanhTien.ToString("#,##") VNĐ</span></li>
+                            }
+                            <li>Thành Tiền <i>-</i> <span>@Model.Sum(n => n.ThanhTien) VNĐ</span></li>
+                        </ul>
+                    </div>
+                    <!--thiết kế form khách hàng-->
+                    <div class="checkout-left-basket animated wow slideInLeft" data-wow-delay=".5s">
+                        <h4>Đăng Ký Khách Hàng</h4>
+                        @using (Html.BeginForm("DatHang", "GioHang"))
+                        {
+                            if (Session["TaiKhoan"] == null)
+                            {
+                                <div class="form-group">
+                                    <label for="TenKH" class="control-label col-md-4">Tên Khách Hàng :</label>
+                                    <div class="col-md-8">
+                                        @Html.TextBox("TenKH")
+                                        <span style="color:red;" id="TB_TenKH"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email" class="control-label col-md-4">Email :</label>
+                                    <div class="col-md-8">
+                                        @Html.TextBox("Email")
+                                        <span style="color:red;" id="TB_Email"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="SoDienThoai" class="control-label col-md-4">Số Điện Thoại :</label>
+                                    <div class="col-md-8">
+                                        @Html.TextBox("SoDienThoai")
+                                        <span style="color:red;" id="TB_SDT"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="DiaChi" class="control-label col-md-4">Địa Chỉ :</label>
+                                    <div class="col-md-8">
+                                        @Html.TextBox("DiaChi")
+                                        <span style="color:red;" id="TB_DiaChi"></span>
+                                    </div>
+                                </div>
+
+
+                            }
+                            <div class="btn-dathang">
+                                <button type="submit" class="btn btn-outline-primary" id="btnDatHang">Đặt Hàng<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> </button>
+                            </div>
+                            <script>
+                                $("#btnDatHang").click(function () {
+                                    dinhdangEmail = /^[a-z][a-z0-9_\.]{5,32}@@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
+                                    dinhdangSo = /^[0-9]*$/;
+                                    ktEmail = dinhdangEmail.test($('#Email').val());
+                                    ktSDT = dinhdangSo.test($('#SoDienThoai').val());
+                                    var loi = 0;
+                                    if ($("#TenKH").val() == "") {
+                                        $("#TB_TenKH").text("Xin nhập Tên khách hàng !");
+                                        return false;
+                                    } else {
+                                        loi++;
+                                        $("#TB_TenKH").text("");
+                                    }
+                                    //if (!ktEmail) {
+                                    //    $('#TB_Email').text("Email không hợp lệ !");
+                                    //    loi++;
+                                    //}
+                                    //else {
+
+                                    //    $('#TB_Email').text("");
+                                    //}
+                                    //if ($('#DiaChi').val() == "") {
+                                    //    $('#TB_DiaChi').text("Xin nhập địa chỉ !");
+                                    //    loi++;
+                                    //} else {
+                                    //    $('#TB_DiaChi').text("");
+                                    //}
+                                    //if (!ktSDT) {
+                                    //    $('#TB_SDT').text("Số Điện Thoại không hợp lệ !");
+                                    //    loi++;
+                                    //}
+                                    //else {
+                                    //    $('#TB_SDT').text("");
+                                    //}
+
+                                    if (loi != 0) {
+                                        return false;
+                                    }
+                                });
+                            </script>
+
+                        }
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="checkout-left">
+                    <div class="checkout-btn animated wow slideInRight" data-wow-delay=".5s">
+                        <a href="@Url.Action("index","Home")"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Tiếp tục mua hàng</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- //check out -->
+    }
+    </div>

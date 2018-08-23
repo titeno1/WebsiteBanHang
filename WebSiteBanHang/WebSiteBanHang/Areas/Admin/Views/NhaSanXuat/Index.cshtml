@@ -1,0 +1,80 @@
+﻿@using WebSiteBanHang.Models
+@using PagedList.Mvc
+@model PagedList.IPagedList<NhaSanXuat>
+@{
+    ViewBag.Title = "Nhà Sản Xuất";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3 class="box-title">
+           Nhà Sản Xuất
+        </h3>
+    </div>
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal2">
+                        Thêm Nhà Sản Xuất
+                    </button>
+                </h3>
+                <div class="box-tools">
+                    @using (Html.BeginForm("Index", "NhaSanXuat", FormMethod.Get, new { role = "search", id = "search-form" }))
+                    {
+                        <div class="input-group input-group-md" style="width: 200px;">
+                            <input type="text" name="search" class="form-control pull-right" placeholder="Search" id="Search">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên Nhà Sản Xuất</th>
+                            <th>Thông Tin</th>
+                            <th>Logo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="Search">
+                                <td>@item.MaNSX</td>
+                                <td>@item.TenNSX</td>
+                                <td>@item.ThongTin</td>
+                                <td>@item.Logo</td>
+                                <td>
+                                    <a href="@Url.Action("Details","NhaSanXuat",new{@id = item.MaNSX})" class="btn btn-app btn-primary">
+                                        <i class="fa fa-eye-slash"></i>
+                                    </a>
+                                    <a href="@Url.Action("Edit","NhaSanXuat",new{@id = item.MaNSX})" class="btn btn-app btn-primary">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="@Url.Action("Delete","NhaSanXuat",new{@id = item.MaNSX})" class="btn btn-app btn-danger">
+                                        <i class="fa fa-trash-o"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page, @sTuKhoa = ViewBag.TuKhoa }))
+            </div>
+        </div>
+        <!-- /.box -->
+    </div>
+    @Html.Action("Create", "NhaSanXuat")
+</div>

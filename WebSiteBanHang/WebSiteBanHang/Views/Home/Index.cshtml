@@ -1,0 +1,185 @@
+﻿@using WebSiteBanHang.Models
+@{
+    /**/
+
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+@{
+    IEnumerable<SanPham> lstSP = (IEnumerable<SanPham>)ViewBag.ListSP;
+    IEnumerable<SanPham> lstSP2 = (IEnumerable<SanPham>)ViewBag.ListSP2;
+    IEnumerable<SanPham> lstSP3 = (IEnumerable<SanPham>)ViewBag.ListSP3;
+    IEnumerable<SanPham> lstSP4 = (IEnumerable<SanPham>)ViewBag.ListSP4;
+    IEnumerable<SanPham> lstSP5 = (IEnumerable<SanPham>)ViewBag.ListSP5;
+    IEnumerable<SanPham> lstSP6 = (IEnumerable<SanPham>)ViewBag.ListSP6;
+}
+
+
+<!-- banner-bootom-w3-agileits -->
+<div class="banner-bootom-w3-agileits wow fadeInUp" data-wow-duration="2s">
+    <div class="container">
+        <h3 class="wthree_text_info">Khuyến Mãi</h3>
+
+        <div class="col-md-5 bb-grids bb-left-agileits-w3layouts wow fadeInLeft" data-wow-duration="2s">
+            <a href="womens.html">
+                <div class="bb-left-agileits-w3layouts-inner grid">
+                    <figure class="effect-roxy">
+                        <img src="~/Content/images/ImagesQuangCao/banner-ipad.jpg" alt=" " class="img-responsive" style="height:700px;" />
+                        <figcaption>
+                            <h3><span>S</span>ale </h3>
+                            <p>Upto 55%</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-7 bb-grids bb-middle-agileits-w3layouts wow fadeInRight" data-wow-duration="2s">
+            <a href="mens.html">
+                <div class="bb-middle-agileits-w3layouts grid">
+                    <figure class="effect-roxy">
+                        <img src="~/Content/images/ImagesQuangCao/banner-dt.jpg" alt=" " class="img-responsive" style="height:300px;" />
+                        <figcaption>
+                            <h3><span>S</span>ale </h3>
+                            <p>Upto 55%</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="mens.html">
+                <div class="bb-middle-agileits-w3layouts forth grid">
+                    <figure class="effect-roxy">
+                        <img src="~/Content/images/ImagesQuangCao/Banner-lt.jpg" alt=" " class="img-responsive" style="height:300px;">
+                        <figcaption>
+                            <h3><span>S</span>ale </h3>
+                            <p>Upto 65%</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--/grids-->
+<div class="agile_last_double_sectionw3ls wow fadeInUp">
+    <div class="col-md-6 multi-gd-img multi-gd-text  wow fadeInLeft " data-wow-duration="2s" >
+        <a href="womens.html"><img src="~/Content/images/ImagesQuangCao/banner-web01.png" alt=" " class="img-responsive" style="height:400px;" /><h4>Flat <span>50%</span> offer</h4></a>
+
+    </div>
+    <div class="col-md-6 multi-gd-img multi-gd-text  wow fadeInRight " data-wow-duration="2s">
+        <a href="womens.html"><img src="~/Content/images/ImagesQuangCao/web-Banner-02.jpg" alt=" " class="img-responsive" style="height:400px;"><h4>Flat <span>50%</span> offer</h4></a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--/grids-->
+<!-- /new_arrivals -->
+<div class="new_arrivals_agile_w3ls_info wow fadeInUp " data-wow-duration="2s">
+    <div class="container">
+        <h3 class="wthree_text_info">Sản Phẩm Mới</h3>
+        <div id="horizontalTab">
+            <ul class="resp-tabs-list">
+                <li> Điện Thoại</li>
+                <li> Máy Tính Bảng</li>
+                <li> LapTop</li>
+            </ul>
+            <div class="resp-tabs-container">
+                <!--/tab_one-->
+                <div class="tab1">
+                    @Html.Partial("SanPhamPartial", lstSP)
+                </div>
+                <div class="tab2">
+                    @Html.Partial("SanPhamPartial", lstSP2)
+                </div>
+                <div class="tab3">
+                    @Html.Partial("SanPhamPartial", lstSP3)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--product-->
+<div class="new_arrivals_agile_w3ls_info  wow fadeInUp " data-wow-duration="2s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h3 style="font-size:36px;font-weight:bold">Sản Phẩm</h3>
+            </div>
+            <div class="col-md-3">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                       data-slide="prev" style="margin-left:1rem"></a>
+                    <a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                       data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        @Html.Partial("SanPhamPartial2", lstSP4)
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @Html.Partial("SanPhamPartial2", lstSP5)
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @Html.Partial("SanPhamPartial2", lstSP6)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/grids-->
+<div class="coupons  wow fadeInUp " data-wow-duration="2s">
+    <div class="coupons-grids text-center">
+        <div class="w3layouts_mail_grid">
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>FREE SHIPPING</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+            </div>
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>24/7 SUPPORT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+            </div>
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>MONEY BACK GUARANTEE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+            </div>
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>FREE GIFT COUPONS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+    </div>
+</div>
+<!--grids-->

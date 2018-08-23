@@ -1,0 +1,53 @@
+﻿@using WebSiteBanHang.Models
+@using PagedList.Mvc
+@model PagedList.IPagedList<SanPham>
+@{
+    ViewBag.Title = "KQTimKiem";
+    Layout = "~/Views/Layout/ProductLayout.cshtml";
+}
+<div class="container-fluid">
+    <div class="sort-grid">
+        @using (Ajax.BeginForm("KQTimKiemPartial", "TimKiem", new AjaxOptions { @UpdateTargetId = "KQTimKiem", InsertionMode = InsertionMode.Replace }))
+        {
+            <input type="text" name="sTuKhoa" placeholder="Search..">
+        }
+    </div>
+    
+    <div class="single-pro" id="KQTimKiem">
+
+        @foreach (var item in Model.OrderBy(n=>n.DonGia))
+        {
+
+            <div class="col-md-3 product-men">
+                <div class="men-pro-item simpleCart_shelfItem">
+                    <div class="men-thumb-item">
+                        <img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt="" class="pro-image-front" style="height:260px">
+                        <img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt="" class="pro-image-back" style="height:260px">
+                        <div class="men-cart-pro">
+                            <div class="inner-men-cart-pro">
+                                <a href="@Url.Action("ChiTietSP","SanPham",new {id=item.MaSP})" class="link-product-add-cart">Quick View</a>
+                            </div>
+                        </div>
+                        <span class="product-new-top" style="display:none">New</span>
+                    </div>
+                    <div class="item-info-product ">
+                        <h4><a href="single.html">@item.TenSP</a></h4>
+                        <div class="info-product-price">
+                            <span class="item_price">@item.DonGia.Value.ToString("#,##") VNĐ</span>
+                        </div>
+
+                        <a href="@Url.Action("ThemGioHang", "GioHang", new { @id = item.MaSP, @strURL = Request.Url.ToString() })" class="btnCart">Thêm Giỏ Hàng</a>
+
+                    </div>
+                </div>
+            </div>
+
+        }
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="dlink" style="margin-left:25px;">
+        @Html.PagedListPager(Model, page => Url.Action("KQTimKiem", new { page = page, @sTuKhoa = ViewBag.TuKhoa }))
+    </div>
+</div>
+

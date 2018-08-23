@@ -1,0 +1,84 @@
+﻿@using WebSiteBanHang.Models
+@using PagedList.Mvc
+@model PagedList.IPagedList<NhaCungCap>
+@{
+    ViewBag.Title = "Nhà Cung Cấp";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3 class="box-title">
+            Nhà Cung Cấp
+        </h3>
+    </div>
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal2">
+                        Thêm Nhà Cung Cấp
+                    </button>
+                </h3>
+                <div class="box-tools">
+                    @using (Html.BeginForm("Index", "NhaCungCap", FormMethod.Get, new { role = "search", id = "search-form" }))
+                    {
+                        <div class="input-group input-group-md" style="width: 200px;">
+                            <input type="text" name="search" class="form-control pull-right" placeholder="Search" id="Search">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên Nhà Cung Cấp</th>
+                            <th>Địa Chỉ</th>
+                            <th>Email</th>
+                            <th>Số Điện Thoại</th>
+                            <th>Fax</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr class="Search">
+                            <td>@item.MaNCC</td>
+                            <td>@item.TenNCC</td>
+                            <td>@item.DiaChi</td>
+                            <td>@item.Email</td>
+                            <td>@item.SoDienThoai</td>
+                            <td>@item.Fax</td>
+                            <td>
+                                <a href="@Url.Action("Details","NhaCungCap",new{@id = item.MaNCC})" class="btn btn-app btn-primary">
+                                    <i class="fa fa-eye-slash"></i>
+                                </a>
+                                <a href="@Url.Action("Edit","NhaCungCap",new{@id = item.MaNCC})" class="btn btn-app btn-primary">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a href="@Url.Action("Delete","NhaCungCap",new{@id = item.MaNCC})" class="btn btn-app btn-danger">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page, @sTuKhoa = ViewBag.TuKhoa }))
+            </div>
+        </div>
+        <!-- /.box -->
+    </div>
+    @Html.Action("Create", "NhaCungCap")
+</div>

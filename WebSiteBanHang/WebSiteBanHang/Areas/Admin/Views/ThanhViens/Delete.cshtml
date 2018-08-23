@@ -1,0 +1,108 @@
+﻿@model WebSiteBanHang.Models.ThanhVien
+
+@{
+    ViewBag.Title = "Xóa Thành Viên";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <h3 style="padding-left:1rem" class="box-title">
+                Xóa Thành Viên
+            </h3>
+            <div class="box-header">
+                <h3 class="box-title">
+                    Bạn có Chắc muốn xóa thành viên này ?
+                </h3>
+                <div class="box-body">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.TaiKhoan)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.TaiKhoan)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MatKhau)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.MatKhau)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.HoTen)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.HoTen)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiaChi)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.DiaChi)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.SoDienThoai)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.SoDienThoai)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.CauHoi)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CauHoi)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.CauTraLoi)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CauTraLoi)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.LoaiThanhVien.TenLoai)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.LoaiThanhVien.TenLoai)
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="box-footer clearfix">
+                    @using (Html.BeginForm("Delete", "ThanhViens", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Delete" class="btn btn-danger" /> |
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

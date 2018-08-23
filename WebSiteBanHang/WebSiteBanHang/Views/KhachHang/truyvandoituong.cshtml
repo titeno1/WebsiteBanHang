@@ -1,0 +1,58 @@
+﻿@model WebSiteBanHang.Models.KhachHang
+
+@{
+    ViewBag.Title = "truyvandoituong";
+}
+
+<h2>truyvandoituong</h2>
+
+<div>
+    <h4>KhachHang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenKH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenKH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoDienThoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoDienThoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThanhVien.TaiKhoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThanhVien.TaiKhoan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaKH }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

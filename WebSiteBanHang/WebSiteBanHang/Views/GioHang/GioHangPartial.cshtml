@@ -1,0 +1,43 @@
+﻿@using WebSiteBanHang.Models
+@model List<itemGioHang>
+<div class="top_nav_right">
+    <div class="wthreecartaits wthreecartaits2 cart cart box_1" id="divGioHang">
+        <div class="dropdown">
+            <button class="w3view-cart navbar-right" id="cart" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+            <div class="dropdown-content">
+                @if (Model == null || Model.Count == 0)
+                {
+                    <h4 style="color:black;font-weight:500">Giỏ Hàng rỗng !</h4>
+                }
+                else
+                {
+                    <div class="shopping-cart" id="divGioHang">
+                        <div class="shopping-cart-header">
+                            <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">@ViewBag.TongSoLuong</span>
+                            <div class="shopping-cart-total">
+                                <span class="lighter-text">Tổng Tiền:</span>
+                                <span class="main-color-text">@Model.Sum(n=>n.DonGia * n.SoLuong).ToString("#,##") VNĐ</span>
+                            </div>
+                        </div> <!--end shopping-cart-header -->
+
+                        <ul class="shopping-cart-items">
+                            @foreach (var item in Model)
+                            {
+                                <li class="clearfix">
+                                    <img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt="item1" />
+                                    <span class="item-name">@item.TenSP</span>
+                                    <span class="item-price">@item.DonGia.ToString("#,##") VNĐ</span>
+                                    <span class="item-quantity">Số Lượng:@item.SoLuong</span>
+                                </li>
+                            }
+                            </ul>
+
+                        <a href="@Url.Action("XemGioHang","GioHang")" class="button">Checkout</a>
+                    </div> <!--end shopping-cart -->
+                }
+                </div>
+        </div>
+    </div>
+</div>
+
+

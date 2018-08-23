@@ -1,0 +1,63 @@
+﻿@using WebSiteBanHang.Models;
+@model IEnumerable<LoaiThanhVien>
+@{
+    ViewBag.Title = "Phân Quyền";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3 class="box-title">
+            Phân Quyền
+        </h3>
+    </div>
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">               
+                <div class="box-tools">
+                    @using (Html.BeginForm("Index", "NhaSanXuat", FormMethod.Get, new { role = "search", id = "search-form" }))
+                    {
+                        <div class="input-group input-group-md" style="width: 200px;">
+                            <input type="text" name="search" class="form-control pull-right" placeholder="Search" id="Search">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+
+                    <thead>
+                        <tr>
+                            <th>Mã Loại Thành Viên</th>
+                            <th>Tên Loại Thành Viên</th>                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="Search">
+                                <td>@item.MaLoaiTV</td>
+                                <td>@item.TenLoai</td>                              
+                                <td>
+                                    <a href="@Url.Action("PhanQuyen","PhanQuyen",new{@id = item.MaLoaiTV})" class="btn btn-success">
+                                        <i class="fa fa-bar-chart-o"></i>
+                                        Phân Quyền
+                                    </a>                                 
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">              
+            </div>
+        </div>
+        <!-- /.box -->
+    </div>
+</div>

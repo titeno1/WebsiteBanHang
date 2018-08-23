@@ -1,0 +1,97 @@
+﻿@model WebSiteBanHang.Models.SanPham
+@{
+    ViewBag.Title = "NhapHangDon";
+    Layout = "~/Areas/Admin/Views/LayoutAdmin/AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <!-- left column -->
+    <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h1 class="box-title">Nhập Hàng Sản Phẩm</h1>
+            </div>
+            <div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box box-primary">
+
+                                <div class="box-body box-profile">
+                                    <img src="@Url.Content("../../../Content/images/ImagesSanPham/"+Model.HinhAnh)" class="img-fluid" style="width:350px;height:350px" />                                 
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="nav-tabs-custom animated wow fadeInRight" data-wow-delay="2s">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#activity" data-toggle="tab">Thông Tin Chung</a></li>
+                                    <li><a href="#timeline" data-toggle="tab">Cấu Hình</a></li>
+                                    <li><a href="#settings" data-toggle="tab">Mô Tả</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="active tab-pane" id="activity">
+                                        <!-- Post -->
+                                        <div class="post">
+                                            <div class="user-block">
+                                                <h2>
+                                                    @Model.TenSP
+
+                                                </h2>
+                                                <h4>Đơn Giá : <span>@Model.DonGia.Value.ToString("#,##") VNĐ</span></h4>
+                                                <h4>Số Lượng Tồn : <span>@Model.SoLuongTon</span></h4>
+                                                <h4>Số Lần Mua : <span>@Model.SoLanMua</span></h4>
+                                            </div>
+
+                                        </div>
+                                        <!-- /.post -->
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                    <div class="tab-pane" id="timeline">
+                                        @Html.Raw(Model.CauHinh)
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                    <div class="tab-pane" id="settings">
+                                        @Html.Raw(Model.MoTa)
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                </div>
+                                <!-- /.tab-content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>Thông tin nhập hàng</legend>
+                </fieldset>
+                @using (Html.BeginForm("NhapHangDon", "QuanLyPhieuNhap"))
+                {
+                    @Html.Hidden("MaSP", Model.MaSP)
+                    <div class="row">
+                        <div class="col-md-4">
+                            @{var lstNCC = (SelectList)ViewBag.MaNCC;}
+                            Nhà cung cấp: @Html.DropDownList("MaNCC", lstNCC, new { @class = "MaNCC" })
+                        </div>
+                        <div class="col-md-4">
+                            So lượng nhập : @Html.TextBox("SoLuongNhap")
+                        </div>
+                        <div class="col-md-4">
+                            Đơn giá nhập :@Html.TextBox("DonGiaNhap")
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                    </div>
+                    <div class="clear right" style="text-align:right;">
+                        <br />
+                        <input type="submit" class="btn btn-primary" value="Nhập hàng" />
+                    </div>
+                                }
+                </div>
+        </div>
+    </div>
+</div>
+

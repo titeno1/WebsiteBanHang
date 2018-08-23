@@ -1,0 +1,32 @@
+﻿@using WebSiteBanHang.Models
+@model IEnumerable<SanPham>
+
+
+                    @foreach (var item in Model)
+                    {
+                        
+                        <div class="col-md-3 product-men">
+                            <div class="men-pro-item simpleCart_shelfItem">
+                                <div class="men-thumb-item">
+                                    <img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt="" class="pro-image-front" style="height:250px">
+                                    <img src="@Url.Content("~/Content/images/ImagesSanPham/" + item.HinhAnh)" alt="" class="pro-image-back" style="height:250px">
+                                    <div class="men-cart-pro">
+                                        <div class="inner-men-cart-pro">
+                                            <a href="@Url.RouteUrl("ChiTietSanPham",new { @id=item.MaSP,@tensp=item.TenSP})" class="link-product-add-cart">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product ">
+                                    <h4><a href="single.html">@item.TenSP</a></h4>
+                                    <div class="info-product-price">
+                                        <span class="item_price">@item.DonGia.Value.ToString("#,##") VNĐ</span>
+                                    </div>
+                                    <a href="@Url.Action("ThemGioHang", "GioHang", new { @id = item.MaSP, @strURL = Request.Url.ToString() })" class="btnCart">Thêm Giỏ Hàng</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    }
+                        <div class="clearfix"></div>

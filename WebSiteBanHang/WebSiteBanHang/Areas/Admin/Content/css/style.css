@@ -1,0 +1,37 @@
+﻿.nav > li {
+    background: rgba(0,0,0,.5);
+}
+
+.divTable {
+    width: 100%;
+    border: 1px solid #999999;
+}
+
+    .divTable td {
+        border: 1px solid #999999;
+    }
+
+.gridHead {
+    background-color: Green;
+}
+
+    .gridHead > th > a {
+        color: #fff;
+    }
+
+.gridFooter {
+    font-weight: bold;
+}
+
+.divTable a {
+    color: blue;
+}
+/*.gridRow {
+        color:#fff;
+        background-color:blueviolet;
+    }
+    .gridAltRow {
+        color:#fff;
+        background-color:darkorange;
+    }*/
+

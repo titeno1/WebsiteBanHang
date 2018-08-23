@@ -1,0 +1,27 @@
+﻿@using WebSiteBanHang.Models
+@model IEnumerable<SanPham>
+
+<div class="css-treeview  wow fadeInLeft " data-wow-duration="2s">
+    <h4>Danh Mục</h4>
+    @foreach (var groupItem in Model.GroupBy(n => n.LoaiSanPham))
+    {
+        if (groupItem.Key != null)
+        {
+            <ul class="tree-list-pad">
+                <li>
+                    <input type="checkbox" checked="checked" id="@groupItem.Key.TenLoai" /><label for="@groupItem.Key.TenLoai"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>@groupItem.Key.TenLoai</label>
+                            <ul>
+                                @foreach (var item in groupItem.GroupBy(n => n.NhaSanXuat))
+                                {
+                                    if (item.Key != null)
+                                    {
+                                <li><a href="@Url.RouteUrl("SanPham",new { @MaLoaiSP=groupItem.Key.MaLoaiSP,@MaNSX=item.Key.MaNSX})" style="font:bold">@item.Key.TenNSX</a></li>
+                                    }
+                                }
+                            </ul>
+                        </li>
+            </ul>
+        }
+    }
+        </div>
+
