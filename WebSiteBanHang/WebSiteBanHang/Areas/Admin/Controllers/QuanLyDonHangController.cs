@@ -63,7 +63,7 @@ namespace WebSiteBanHang.Areas.Admin.Controllers
             var lstChiTietDH = db.ChiTietDonDatHangs.Where(n => n.MaDDH == ddh.MaDDH);
             ViewBag.ListChiTietDH = lstChiTietDH;
             //Gửi khách hàng 1 mail để xác nhận việc thanh toán 
-            GuiEmail("Xác đơn hàng của hệ thống bán hàng tech house", "thuong123752@gmail.com", "TH.com.vn@gmail.com", "google123456", "Đơn hàng của bạn đã được đặt thành công!");
+            GuiEmail("Xác đơn hàng của hệ thống bán hàng tech house", "titeno1231@gmail.com", "thuong123752@gmail.com", "ngusaocho", "Đơn hàng của bạn đã được đặt thành công!");
             return View(ddhUpdate);
         }
         public void GuiEmail(string Title, string ToEmail, string FromEmail, string PassWord, string Content)

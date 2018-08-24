@@ -37,7 +37,7 @@ namespace WebSiteBanHang.Areas.Admin.Controllers
             ViewBag.MaNSX = new SelectList(db.NhaSanXuats.OrderBy(n => n.TenNSX), "MaNSX", "TenNSX");
             return PartialView();
         }
-       
+        [ValidateInput(false)]
         [HttpPost]
         public ActionResult ThemPartial(SanPham sp,HttpPostedFileBase[] HinhAnh)
         {

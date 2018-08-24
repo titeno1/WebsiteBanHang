@@ -7287,6 +7287,10 @@
     <Content Include="Content\images\ImagesTinTuc\HinhBia9.jpg" />
     <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\t1.jpg" />
+    <Content Include="Content\images\t2.jpg" />
+    <Content Include="Content\images\t3.jpg" />
+    <Content Include="Content\images\t4.jpg" />
     <Content Include="Content\images\up_arrow.png" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\easy-responsive-tabs.js" />
